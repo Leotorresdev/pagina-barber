@@ -1,27 +1,25 @@
 export const siteConfig = {
-  name: "RËGAL CUTS — Barbería Premium",
-  shortName: "RËGAL CUTS",
+  name: "Jimmy Larez — Web Personal",
+  shortName: "Jimmy Larez",
   description:
-    "Donde la precisión se encuentra con el estilo. Cortes expertos, líneas limpias y un ritual que vale tu tiempo. Reserva tu sesión en RËGAL CUTS.",
-  url: "https://regalcuts.example",
-  established: 2018,
+    "Colección exclusiva de relojes y modelos. Explora mi catálogo personal.",
+  url: "https://jimmylarez.example",
+  established: 2024,
   contact: {
-    address: "218 Mercer Street",
-    city: "New York, NY 10012",
-    phone: "+1 (212) 555-0184",
-    email: "hola@regalcuts.co",
+    address: "Venezuela",
+    city: "",
+    phone: "",
+    email: "contacto@jimmylarez.com",
   },
   hours: [
-    { d: "Lun – Vie", h: "9:00 AM – 8:00 PM" },
-    { d: "Sábado", h: "8:00 AM – 9:00 PM" },
-    { d: "Domingo", h: "10:00 AM – 6:00 PM" },
+    { d: "Lunes a Domingo", h: "24/7 Online" }
   ],
   nav: [
-    { label: "Servicios", href: "#services" },
-    { label: "Galería", href: "#gallery" },
+    { label: "Inicio", href: "#top" },
+    { label: "Catálogo", href: "#catalog" },
     { label: "Nosotros", href: "#about" },
-    { label: "Testimonios", href: "#testimonials" },
-    { label: "Contacto", href: "#contact" },
+    { label: "Reservar", href: "#booking" },
+    { label: "Ubicación", href: "#contact" },
   ],
 } as const;
 

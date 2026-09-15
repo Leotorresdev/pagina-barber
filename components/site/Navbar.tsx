@@ -30,9 +30,9 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
           <a href="#top" className="flex items-center gap-3">
-            <img src="/icono.png" alt="Barber Monkey icon" className="h-10 w-10 object-contain" />
+            <img src="/favicon.jpg" alt="Jimmy Larez logo" className="h-10 w-10 object-cover rounded-full ring-1 ring-[#E0C398]/50" />
             <div className="flex flex-col leading-none">
-              <span className="font-display text-xl font-bold text-cream">Barber Monkey</span>
+              <span className="font-display text-xl font-bold text-cream">Jimmy Larez</span>
             </div>
           </a>
 
@@ -50,7 +50,7 @@ export function Navbar() {
 
           <a
             href="#booking"
-            className="hidden lg:inline-flex gold-border-btn items-center px-6 py-2.5 border border-gold text-gold text-xs tracking-[0.25em] uppercase font-medium transition-colors"
+            className="hidden lg:inline-flex items-center px-6 py-2.5 border border-white/80 text-white hover:bg-white hover:text-black text-xs tracking-[0.25em] uppercase font-medium transition-colors"
           >
             Reservar
           </a>
@@ -76,8 +76,8 @@ export function Navbar() {
           >
             <div className="flex items-center justify-between h-20 px-6">
               <span className="font-display text-2xl font-bold text-cream">
-                RËGAL{" "}
-                <span className="text-xs tracking-[0.4em] text-gold font-light ml-1">CUTS</span>
+                JIMMY{" "}
+                <span className="text-xs tracking-[0.4em] text-gold font-light ml-1">LAREZ</span>
               </span>
               <button
                 aria-label="Cerrar menú"

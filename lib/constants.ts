@@ -1,21 +1,16 @@
 import { Scissors, Sparkles, Clock, Shield, Star, Zap } from "lucide-react";
 
 export const services = [
-  { icon: Scissors, name: "Corte Clásico", desc: "El corte atemporal del caballero, ejecutado con cuidado quirúrgico.", price: "Desde $25" },
-  { icon: Zap, name: "Degradado & Taper", desc: "Cortes degradados de precisión. Limpios, definidos, inconfundibles.", price: "Desde $30" },
-  { icon: Sparkles, name: "Diseño de Barba", desc: "Da forma a tu sello con tijeras y pulso firme.", price: "Desde $20" },
-  { icon: Star, name: "Paquete Royal", desc: "Corte, barba y toalla caliente — el ritual completo.", price: "Desde $65" },
-  { icon: Shield, name: "Corte Niños", desc: "Suave, paciente y divertido para los pequeños caballeros.", price: "Desde $18" },
-  { icon: Clock, name: "Tratamiento Capilar", desc: "Acondicionamiento profundo y cuidado del cuero cabelludo.", price: "Desde $35" },
+  { icon: Sparkles, name: "Asesoría Personalizada", desc: "Encuentra el reloj perfecto para ti con nuestra ayuda.", price: "Gratis" },
+  { icon: Shield, name: "Revisión de Piezas", desc: "Verificación y revisión de modelos.", price: "Gratis" },
+  { icon: Clock, name: "Compra Directa", desc: "Reserva para concretar una compra directa.", price: "-" },
 ];
 
-export const barbers = ["Cualquiera disponible", "Carlos", "Miguel", "Andrés", "Luis"];
+export const barbers = ["Cualquiera disponible", "Jimmy Larez", "Asesor de Ventas"];
 
 export const team = [
-  { name: "Carlos Vega", title: "Barbero Maestro", specialty: "Clásico y Tijera", img: "https://i.pravatar.cc/300?img=12" },
-  { name: "Miguel Soto", title: "Barbero Senior", specialty: "Degradados a Piel", img: "https://i.pravatar.cc/300?img=33" },
-  { name: "Andrés Ruiz", title: "Especialista en Barba", specialty: "Diseño y Afeitado", img: "https://i.pravatar.cc/300?img=15" },
-  { name: "Luis Marín", title: "Estilista", specialty: "Cortes Modernos con Textura", img: "https://i.pravatar.cc/300?img=68" },
+  { name: "Jimmy Larez", title: "Fundador & Coleccionista", specialty: "Relojes de Alta Gama", img: "/logo.jpg" },
+  { name: "Equipo de Ventas", title: "Asesores", specialty: "Atención al Cliente", img: "https://i.pravatar.cc/300?img=33" },
 ];
 
 export const testimonials = [

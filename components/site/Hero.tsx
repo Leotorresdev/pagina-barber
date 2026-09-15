@@ -1,85 +1,73 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="top" className="relative h-screen min-h-[640px] w-full overflow-hidden grain">
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1920&auto=format&fit=crop')",
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
-      <div className="absolute inset-0 bg-background/40" />
-
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-5xl mx-auto">
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="eyebrow mb-8"
-        >
-          Est. 2018 · Barbería Premium
-        </motion.p>
-
-        <motion.h1
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.4, ease: [0.7, 0, 0.2, 1] }}
-          className="font-display font-bold text-cream leading-[1.05] text-[44px] md:text-[64px] lg:text-[80px] tracking-tight"
-        >
-          Donde la Precisión <br />
-          <span className="italic font-normal text-gold">Encuentra el Estilo</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-8 max-w-xl text-cream/70 text-base md:text-lg"
-        >
-          Cortes expertos, líneas limpias y un ritual que vale tu tiempo.
-        </motion.p>
-
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="mt-12 flex flex-col sm:flex-row gap-4"
-        >
-          <motion.a
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.97 }}
-            href="#booking"
-            className="px-8 py-4 bg-gold text-background text-xs tracking-[0.3em] uppercase font-semibold hover:bg-cream transition-colors"
-          >
-            Reserva Tu Sesión
-          </motion.a>
-          <motion.a
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.97 }}
-            href="#gallery"
-            className="gold-border-btn px-8 py-4 border border-gold text-gold text-xs tracking-[0.3em] uppercase font-semibold transition-colors"
-          >
-            Explora Nuestro Trabajo
-          </motion.a>
-        </motion.div>
+    <section id="top" className="relative min-h-[90vh] lg:h-screen w-full overflow-hidden bg-[#111] flex items-center pt-20">
+      
+      {/* Background Image / Model (Right aligned) */}
+      <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#111]/95 to-transparent z-10 w-full lg:w-[65%]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#111]/90 via-[#111]/20 to-transparent z-10 h-[25vh]" />
+        <img 
+          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1920&auto=format&fit=crop" 
+          alt="Model" 
+          className="absolute inset-y-0 right-0 w-full lg:w-[50%] h-full object-cover object-center lg:object-right opacity-70 lg:opacity-100"
+        />
       </div>
 
-      <motion.a
-        href="#services"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 8, 0] }}
-        transition={{ opacity: { delay: 1.5 }, y: { repeat: Infinity, duration: 2 } }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-gold/70 hover:text-gold"
-        aria-label="Scroll"
-      >
-        <ChevronDown size={28} />
-      </motion.a>
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-10 flex flex-col justify-center h-full">
+        <div className="max-w-2xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="font-script text-7xl md:text-8xl lg:text-[110px] text-[#E0C398] font-normal leading-none mb-4 -ml-4"
+          >
+            Bienvenido!
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-white text-sm md:text-base font-sans tracking-[0.2em] uppercase font-medium mb-6"
+          >
+            UN GRAN ESTILO. UN MEJOR TÚ.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-white/70 text-sm md:text-base font-sans leading-relaxed mb-10 max-w-md"
+          >
+            Descubre el punto de encuentro perfecto entre el cuidado personal y la elegancia. Combinamos el arte de la barbería clásica con una exclusiva selección de relojes de lujo. Relájate en la silla, define tu estilo y encuentra la pieza perfecta que marque tu tiempo.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4"
+          >
+            <a
+              href="#catalog"
+              className="inline-block px-10 py-3 bg-white text-black font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-transparent hover:text-white border border-white transition-colors text-center"
+            >
+              VER CATÁLOGO
+            </a>
+            <a
+              href="#booking"
+              className="inline-block px-10 py-3 border border-white/50 text-white font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors text-center"
+            >
+              RESERVAR
+            </a>
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 }

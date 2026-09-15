@@ -12,12 +12,11 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div>
           <div className="flex items-baseline gap-2">
-            <span className="font-display text-2xl font-bold text-cream">RËGAL</span>
-            <span className="text-xs tracking-[0.4em] text-gold font-light">CUTS</span>
+            <span className="font-display text-2xl font-bold text-cream">JIMMY</span>
+            <span className="text-xs tracking-[0.4em] text-gold font-light">LAREZ</span>
           </div>
           <p className="mt-4 text-sm text-cream/60 leading-relaxed max-w-xs">
-            Donde la precisión se encuentra con el estilo. Una barbería construida sobre el oficio,
-            el ritual y el respeto.
+            Elegancia, precisión y un estilo inigualable. Explora mi catálogo y encuentra la pieza perfecta.
           </p>
         </div>
 
@@ -35,26 +34,16 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="eyebrow mb-5">Servicios</p>
-          <ul className="space-y-3 text-sm">
-            {services.map((s) => (
-              <li key={s.name} className="text-cream/70">
-                {s.name}
-              </li>
-            ))}
-          </ul>
+          {/* Omitido servicios */}
         </div>
 
         <div>
           <p className="eyebrow mb-5">Conecta</p>
           <p className="text-sm text-cream/70">
-            {siteConfig.contact.address}
-            <br />
-            {siteConfig.contact.city}
+            {siteConfig.contact.email}
           </p>
-          <p className="text-sm text-cream/70 mt-3">{siteConfig.contact.phone}</p>
           <div className="flex gap-4 mt-6">
-            {[Instagram, Facebook, Music2].map((Icon, i) => (
+            {[Instagram, Facebook].map((Icon, i) => (
               <a
                 key={i}
                 href="#"
@@ -69,8 +58,8 @@ export function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-cream/40 tracking-wider">
-        <p>© {new Date().getFullYear()} RËGAL CUTS. Todos los derechos reservados.</p>
-        <p className="uppercase tracking-[0.3em]">Hecho Para Caballeros</p>
+        <p>© {new Date().getFullYear()} Jimmy Larez. Todos los derechos reservados.</p>
+        <p className="uppercase tracking-[0.3em]">Exclusividad en Relojes</p>
       </div>
     </footer>
   );
