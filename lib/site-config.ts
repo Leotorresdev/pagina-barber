@@ -6,8 +6,8 @@ export const siteConfig = {
   url: "https://jimmylarez.example",
   established: 2024,
   contact: {
-    address: "Venezuela",
-    city: "",
+    address: "Isla de Margarita",
+    city: "Venezuela",
     phone: "0424-8442974",
     email: "",
   },

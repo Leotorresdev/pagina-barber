@@ -43,16 +43,22 @@ export function Footer() {
             {siteConfig.contact.email}
           </p>
           <div className="flex gap-4 mt-6">
-            {[Instagram, Facebook].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                className="w-10 h-10 border border-border flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition-colors"
-                aria-label="Red social"
-              >
-                <Icon size={16} />
-              </a>
-            ))}
+            <a
+              href="https://www.instagram.com/j.larez3?stkn=bmltZDAwOXZreTBt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 border border-border flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={16} />
+            </a>
+            <a
+              href="#"
+              className="w-10 h-10 border border-border flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={16} />
+            </a>
           </div>
         </div>
       </div>
