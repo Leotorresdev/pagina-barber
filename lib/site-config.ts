@@ -9,6 +9,7 @@ export const siteConfig = {
     address: "Venezuela",
     city: "",
     phone: "",
+    email: "",
   },
   hours: [
     { d: "Lunes a Domingo", h: "24/7 Online" }
