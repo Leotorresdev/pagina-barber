@@ -154,7 +154,12 @@ export function Catalog() {
                       transition={{ duration: 0.6, delay: (i % 4) * 0.1 }}
                       className="group flex flex-col items-center"
                     >
-                      <div className="w-full aspect-[4/5] bg-black/20 relative overflow-hidden mb-6 rounded shadow-[0_5px_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_15px_40px_rgba(224,195,152,0.15)] transition-all duration-500">
+                      <a
+                        href={`https://wa.me/584248442974?text=${encodeURIComponent(`Hola Jimmy, estoy muy interesado en adquirir el reloj modelo ${reloj.modelo} (Color: ${activeVariant.color}). ¿Me podrías brindar más información, por favor?`)}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block w-full aspect-[4/5] bg-black/20 relative overflow-hidden mb-6 rounded shadow-[0_5px_15px_rgba(0,0,0,0.5)] group-hover:shadow-[0_15px_40px_rgba(224,195,152,0.15)] transition-all duration-500 cursor-pointer"
+                      >
                         {activeVariant.foto_url ? (
                           <img 
                             key={activeVariant.foto_url}
@@ -168,23 +173,20 @@ export function Catalog() {
                           </div>
                         )}
                         {activeVariant.stock === 0 && (
-                          <div className="absolute top-4 right-4 bg-black/90 text-[#E0C398] text-[10px] px-3 py-1.5 backdrop-blur-md tracking-[0.2em] uppercase font-semibold border border-[#E0C398]/30">
+                          <div className="absolute top-4 right-4 bg-black/90 text-[#E0C398] text-[10px] px-3 py-1.5 backdrop-blur-md tracking-[0.2em] uppercase font-semibold border border-[#E0C398]/30 z-20">
                             AGOTADO
                           </div>
                         )}
                         
                         {/* Overlay and Button on hover */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end items-center pb-8 pointer-events-none group-hover:pointer-events-auto">
-                          <a
-                            href={`https://wa.me/584141234567?text=${encodeURIComponent(`Hola, me interesa el modelo ${reloj.modelo} en color ${activeVariant.color}`)}`}
-                            target="_blank"
-                            rel="noreferrer"
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end items-center pb-8 z-10">
+                          <span
                             className="translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out px-8 py-3 bg-[#E0C398] text-[#111] text-xs tracking-[0.2em] uppercase font-bold hover:bg-white"
                           >
                             CONSULTAR
-                          </a>
+                          </span>
                         </div>
-                      </div>
+                      </a>
                       
                       <div className="text-center flex-1 flex flex-col items-center w-full px-2">
                         <h3 className="font-sans text-sm md:text-base text-white tracking-[0.15em] uppercase font-light mb-2 truncate w-full" title={reloj.modelo}>
