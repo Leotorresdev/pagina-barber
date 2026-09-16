@@ -154,7 +154,8 @@ export function Catalog() {
                       transition={{ duration: 0.6, delay: (i % 4) * 0.1 }}
                       className="group flex flex-col items-center"
                     >
-                      <a
+                      <motion.a
+                        whileTap={{ scale: 0.95 }}
                         href={`https://wa.me/584248442974?text=${encodeURIComponent(`Hola Jimmy, estoy muy interesado en adquirir el reloj modelo ${reloj.modelo} (Color: ${activeVariant.color}). ¿Me podrías brindar más información, por favor?`)}`}
                         target="_blank"
                         rel="noreferrer"
@@ -186,7 +187,7 @@ export function Catalog() {
                             CONSULTAR
                           </span>
                         </div>
-                      </a>
+                      </motion.a>
                       
                       <div className="text-center flex-1 flex flex-col items-center w-full px-2">
                         <h3 className="font-sans text-sm md:text-base text-white tracking-[0.15em] uppercase font-light mb-2 truncate w-full" title={reloj.modelo}>
