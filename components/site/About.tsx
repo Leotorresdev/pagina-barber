@@ -18,8 +18,8 @@ export function About() {
             {[
               { src: "/corte1.jpg", label: "CORTES" },
               { src: "/corte2.jpg", label: "BARBAS" },
-              { src: "/corte1.jpg", label: "ESTILOS" },
-              { src: "/corte2.jpg", label: "TENDENCIA" }
+              { src: "/corte3.png", label: "ESTILOS" },
+              { src: "/corte4.png", label: "TENDENCIA" }
             ].map((item, idx) => (
               <motion.div
                 key={idx}

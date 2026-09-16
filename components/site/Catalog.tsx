@@ -132,7 +132,7 @@ export function Catalog() {
           <>
             <motion.div 
               layout
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+              className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8"
             >
               <AnimatePresence>
                 {displayedRelojes.map((reloj, i) => {
@@ -194,26 +194,38 @@ export function Catalog() {
                           ${activeVariant.precio}
                         </p>
                         
-                        <div className="flex justify-center gap-2 mb-2 mt-auto">
-                          {variantes.map(v => {
-                            const isSelected = activeVariant.id === v.id;
-                            const colorHex = getColorHex(v.color);
+                        <div className="flex flex-wrap justify-center gap-1.5 md:gap-2 mb-2 mt-auto w-full px-1">
+                          {(() => {
+                            const uniqueVariantes = [];
+                            const seenColors = new Set();
+                            for (const v of variantes) {
+                              const hex = getColorHex(v.color);
+                              if (!seenColors.has(hex)) {
+                                seenColors.add(hex);
+                                uniqueVariantes.push(v);
+                              }
+                            }
                             
-                            return (
-                              <button
-                                key={v.id}
-                                onClick={() => setActiveVariants(prev => ({ ...prev, [reloj.id]: v.id }))}
-                                className={`w-4 h-4 rounded-full border transition-all duration-300 ${
-                                  isSelected 
-                                    ? 'border-white scale-125 ring-2 ring-white/20 ring-offset-2 ring-offset-[#0A0A0A]' 
-                                    : 'border-transparent hover:scale-110 hover:border-white/50'
-                                }`}
-                                style={{ backgroundColor: colorHex }}
-                                title={v.color}
-                                aria-label={`Seleccionar color ${v.color}`}
-                              />
-                            );
-                          })}
+                            return uniqueVariantes.map(v => {
+                              const isSelected = activeVariant.id === v.id;
+                              const colorHex = getColorHex(v.color);
+                              
+                              return (
+                                <button
+                                  key={v.id}
+                                  onClick={() => setActiveVariants(prev => ({ ...prev, [reloj.id]: v.id }))}
+                                  className={`w-3.5 h-3.5 md:w-4 md:h-4 rounded-full border transition-all duration-300 flex-shrink-0 ${
+                                    isSelected 
+                                      ? 'border-white scale-125 ring-2 ring-white/20 ring-offset-2 ring-offset-[#0A0A0A]' 
+                                      : 'border-white/30 hover:scale-110 hover:border-white/80'
+                                  }`}
+                                  style={{ backgroundColor: colorHex }}
+                                  title={v.color}
+                                  aria-label={`Seleccionar color ${v.color}`}
+                                />
+                              );
+                            });
+                          })()}
                         </div>
                       </div>
                     </motion.div>

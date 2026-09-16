@@ -137,7 +137,7 @@ export function Booking() {
                       className={fieldCls}
                       value={form.phone}
                       onChange={(e) => update("phone", e.target.value)}
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+58 412-3456789"
                     />
                   </Field>
                 </div>
