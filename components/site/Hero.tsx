@@ -12,7 +12,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#111]/90 via-[#111]/20 to-transparent z-10 h-[25vh]" />
         <img 
-          src="/hero.jpg" 
+          src="/hero.png" 
           alt="Barberia" 
           className="absolute inset-0 w-full h-full object-cover object-[center_right] opacity-40 lg:opacity-70"
         />
