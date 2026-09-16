@@ -1,9 +1,11 @@
 import { Scissors, Sparkles, Clock, Shield, Star, Zap } from "lucide-react";
 
 export const services = [
-  { icon: Sparkles, name: "Asesoría Personalizada", desc: "Encuentra el reloj perfecto para ti con nuestra ayuda.", price: "Gratis" },
-  { icon: Shield, name: "Revisión de Piezas", desc: "Verificación y revisión de modelos.", price: "Gratis" },
-  { icon: Clock, name: "Compra Directa", desc: "Reserva para concretar una compra directa.", price: "-" },
+  { icon: Scissors, name: "Corte Clásico", desc: "Corte tradicional a tijera o máquina con acabado impecable.", price: "$10" },
+  { icon: Sparkles, name: "Corte Fade / Degradado", desc: "Degradado perfecto (Skin fade, Mid fade, Low fade).", price: "$12" },
+  { icon: Shield, name: "Arreglo de Barba", desc: "Perfilado, rebajado y tratamiento para barba.", price: "$8" },
+  { icon: Star, name: "Corte VIP + Barba", desc: "Servicio premium completo que incluye corte y barba.", price: "$18" },
+  { icon: Zap, name: "Asesoría de Relojes", desc: "Consultoría para elegir tu reloj ideal.", price: "Gratis" },
 ];
 
 export const barbers = ["Cualquiera disponible", "Jimmy Larez", "Asesor de Ventas"];

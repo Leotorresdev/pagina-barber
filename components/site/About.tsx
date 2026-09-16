@@ -87,7 +87,7 @@ export function About() {
 
               <a
                 href="#booking"
-                className="inline-block px-10 py-4 border border-[#E0C398] text-[#E0C398] font-sans text-xs font-bold tracking-[0.25em] uppercase hover:bg-[#E0C398] hover:text-[#111] transition-colors"
+                className="inline-block w-full lg:w-auto px-10 py-4 border border-[#E0C398] text-[#E0C398] font-sans text-xs font-bold tracking-[0.25em] uppercase hover:bg-[#E0C398] hover:text-[#111] transition-colors text-center"
               >
                 RESERVAR AHORA
               </a>

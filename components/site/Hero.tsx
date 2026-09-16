@@ -24,7 +24,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-script text-7xl md:text-8xl lg:text-[110px] text-[#E0C398] font-normal leading-none mb-4 -ml-4"
+            className="font-script text-6xl sm:text-7xl md:text-8xl lg:text-[110px] text-[#E0C398] font-normal leading-none mb-4 md:-ml-4"
           >
             Bienvenido!
           </motion.h1>
@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white text-sm md:text-base font-sans tracking-[0.2em] uppercase font-medium mb-6"
+            className="text-white text-xs sm:text-sm md:text-base font-sans tracking-[0.2em] uppercase font-semibold mb-6"
           >
             UN GRAN ESTILO. UN MEJOR TÚ.
           </motion.p>
@@ -51,17 +51,17 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 w-full"
           >
             <a
               href="#catalog"
-              className="inline-block px-10 py-3 bg-white text-black font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-transparent hover:text-white border border-white transition-colors text-center"
+              className="inline-block w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-3 bg-white text-black font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-transparent hover:text-white border border-white transition-colors text-center"
             >
               VER CATÁLOGO
             </a>
             <a
               href="#booking"
-              className="inline-block px-10 py-3 border border-white/50 text-white font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors text-center"
+              className="inline-block w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-3 border border-white/50 text-white font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors text-center"
             >
               RESERVAR
             </a>

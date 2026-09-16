@@ -8,7 +8,7 @@ export const siteConfig = {
   contact: {
     address: "Venezuela",
     city: "",
-    phone: "",
+    phone: "0424-8442974",
     email: "",
   },
   hours: [
