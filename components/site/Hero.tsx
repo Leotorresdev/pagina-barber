@@ -6,15 +6,15 @@ export function Hero() {
   return (
     <section id="top" className="relative min-h-[90vh] lg:h-screen w-full overflow-hidden bg-[#111] flex items-center pt-20">
       
-      {/* Background Image / Model (Right aligned) */}
+      {/* Background Image / Model (Full width, fading right) */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#111]/95 to-transparent z-10 w-full lg:w-[65%]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#111]/90 to-transparent z-10 w-full lg:w-[75%]" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#111]/90 via-[#111]/20 to-transparent z-10 h-[25vh]" />
         <img 
-          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1920&auto=format&fit=crop" 
-          alt="Model" 
-          className="absolute inset-y-0 right-0 w-full lg:w-[50%] h-full object-cover object-center lg:object-right opacity-70 lg:opacity-100"
+          src="/hero.jpg" 
+          alt="Barberia" 
+          className="absolute inset-0 w-full h-full object-cover object-[center_right] opacity-40 lg:opacity-70"
         />
       </div>
 
