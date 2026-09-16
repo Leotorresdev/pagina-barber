@@ -65,7 +65,7 @@ export function Location() {
 
             <motion.a
               whileHover={{ x: 4 }}
-              href="https://maps.google.com/?q=relojeria+venezuela"
+              href="https://maps.app.goo.gl/YieXKX75teZhvcBD7?g_st=atm"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 inline-flex items-center gap-2 text-white text-xs font-bold tracking-[0.3em] uppercase border-b border-white pb-1 hover:text-[#E0C398] hover:border-[#E0C398] transition-colors"

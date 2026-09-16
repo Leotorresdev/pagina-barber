@@ -12,7 +12,7 @@ export const siteConfig = {
     email: "",
   },
   hours: [
-    { d: "Lunes a Domingo", h: "24/7 Online" }
+    { d: "Lunes a Sábado", h: "9:00 AM - 7:00 PM" }
   ],
   nav: [
     { label: "Inicio", href: "#top" },
