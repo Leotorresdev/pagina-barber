@@ -53,7 +53,9 @@ export function Footer() {
               <Instagram size={16} />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/jhoan.larez.58"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 border border-border flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition-colors"
               aria-label="Facebook"
             >
